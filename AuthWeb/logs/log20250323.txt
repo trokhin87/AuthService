@@ -17,3 +17,158 @@
 2025-03-23 00:17:10.675 +03:00 [INF] HTTP POST /api/Auth/login responded 404 in 0.0191 ms
 2025-03-23 00:17:10.676 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth/login - 404 0 null 3.5497ms
 2025-03-23 00:17:10.678 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth/login, Response status code: 404
+2025-03-23 00:19:32.376 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.html - null null
+2025-03-23 00:19:32.377 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.html - 200 null text/html;charset=utf-8 1.7418ms
+2025-03-23 00:19:32.389 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.js - null null
+2025-03-23 00:19:32.391 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.js - 200 null application/javascript;charset=utf-8 1.7837ms
+2025-03-23 00:19:32.512 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - null null
+2025-03-23 00:19:32.515 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.4075ms
+2025-03-23 00:19:35.724 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth/login - application/json 50
+2025-03-23 00:19:35.725 +03:00 [INF] HTTP POST /api/Auth/login responded 404 in 0.0120 ms
+2025-03-23 00:19:35.727 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth/login - 404 0 null 2.6479ms
+2025-03-23 00:19:35.728 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth/login, Response status code: 404
+2025-03-23 00:22:44.968 +03:00 [INF] Application is shutting down...
+2025-03-23 00:22:48.952 +03:00 [INF] User profile is available. Using 'C:\Users\trokh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-23 00:22:49.035 +03:00 [WRN] Overriding address(es) 'http://localhost:5256'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-03-23 00:22:49.040 +03:00 [INF] Now listening on: http://localhost:5082
+2025-03-23 00:22:49.040 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-23 00:22:49.041 +03:00 [INF] Hosting environment: Development
+2025-03-23 00:22:49.041 +03:00 [INF] Content root path: C:\Users\trokh\RiderProjects\AuthService\AuthWeb
+2025-03-23 00:22:50.414 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/ - null null
+2025-03-23 00:22:50.478 +03:00 [INF] HTTP GET / responded 404 in 0.4678 ms
+2025-03-23 00:22:50.487 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/ - 404 0 null 73.9856ms
+2025-03-23 00:22:50.494 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5082/, Response status code: 404
+2025-03-23 00:22:55.821 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.html - null null
+2025-03-23 00:22:55.872 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.html - 200 null text/html;charset=utf-8 51.2835ms
+2025-03-23 00:22:56.039 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.js - null null
+2025-03-23 00:22:56.042 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.js - 200 null application/javascript;charset=utf-8 3.6894ms
+2025-03-23 00:22:56.229 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - null null
+2025-03-23 00:22:56.312 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 82.7415ms
+2025-03-23 00:23:05.649 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth/login - application/json 50
+2025-03-23 00:23:05.651 +03:00 [INF] HTTP POST /api/Auth/login responded 404 in 0.0259 ms
+2025-03-23 00:23:05.652 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth/login - 404 0 null 2.9291ms
+2025-03-23 00:23:05.654 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth/login, Response status code: 404
+2025-03-23 00:23:06.791 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth/login - application/json 50
+2025-03-23 00:23:06.793 +03:00 [INF] HTTP POST /api/Auth/login responded 404 in 0.0078 ms
+2025-03-23 00:23:06.794 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth/login - 404 0 null 2.6008ms
+2025-03-23 00:23:06.796 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth/login, Response status code: 404
+2025-03-23 00:23:07.477 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth/login - application/json 50
+2025-03-23 00:23:07.478 +03:00 [INF] HTTP POST /api/Auth/login responded 404 in 0.0088 ms
+2025-03-23 00:23:07.479 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth/login - 404 0 null 2.6117ms
+2025-03-23 00:23:07.481 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth/login, Response status code: 404
+2025-03-23 00:23:12.250 +03:00 [INF] Application is shutting down...
+2025-03-23 00:28:30.894 +03:00 [INF] User profile is available. Using 'C:\Users\trokh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-23 00:28:30.968 +03:00 [WRN] Overriding address(es) 'http://localhost:5256'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-03-23 00:28:30.973 +03:00 [INF] Now listening on: http://localhost:5082
+2025-03-23 00:28:30.973 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-23 00:28:30.974 +03:00 [INF] Hosting environment: Development
+2025-03-23 00:28:30.974 +03:00 [INF] Content root path: C:\Users\trokh\RiderProjects\AuthService\AuthWeb
+2025-03-23 00:28:35.339 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.html - null null
+2025-03-23 00:28:35.422 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.html - 200 null text/html;charset=utf-8 84.0753ms
+2025-03-23 00:28:35.436 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.js - null null
+2025-03-23 00:28:35.440 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.js - 200 null application/javascript;charset=utf-8 4.4185ms
+2025-03-23 00:28:35.626 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - null null
+2025-03-23 00:28:35.717 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 90.5862ms
+2025-03-23 00:28:42.410 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth/login - application/json 49
+2025-03-23 00:28:42.418 +03:00 [INF] HTTP POST /api/Auth/login responded 404 in 0.3671 ms
+2025-03-23 00:28:42.420 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth/login - 404 0 null 9.3358ms
+2025-03-23 00:28:42.423 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth/login, Response status code: 404
+2025-03-23 00:28:44.022 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth/login - application/json 49
+2025-03-23 00:28:44.024 +03:00 [INF] HTTP POST /api/Auth/login responded 404 in 0.0157 ms
+2025-03-23 00:28:44.025 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth/login - 404 0 null 2.7411ms
+2025-03-23 00:28:44.027 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth/login, Response status code: 404
+2025-03-23 00:29:31.936 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth/login - application/json 49
+2025-03-23 00:29:31.938 +03:00 [INF] HTTP POST /api/Auth/login responded 404 in 0.0172 ms
+2025-03-23 00:29:31.939 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth/login - 404 0 null 2.773ms
+2025-03-23 00:29:31.941 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth/login, Response status code: 404
+2025-03-23 00:29:32.744 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth/login - application/json 49
+2025-03-23 00:29:32.745 +03:00 [INF] HTTP POST /api/Auth/login responded 404 in 0.0139 ms
+2025-03-23 00:29:32.746 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth/login - 404 0 null 2.6612ms
+2025-03-23 00:29:32.748 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth/login, Response status code: 404
+2025-03-23 00:29:50.497 +03:00 [INF] Application is shutting down...
+2025-03-23 00:30:39.438 +03:00 [INF] User profile is available. Using 'C:\Users\trokh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-23 00:30:39.517 +03:00 [WRN] Overriding address(es) 'http://localhost:5256'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-03-23 00:30:39.521 +03:00 [INF] Now listening on: http://localhost:5082
+2025-03-23 00:30:39.522 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-23 00:30:39.522 +03:00 [INF] Hosting environment: Development
+2025-03-23 00:30:39.523 +03:00 [INF] Content root path: C:\Users\trokh\RiderProjects\AuthService\AuthWeb
+2025-03-23 00:30:40.561 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/ - null null
+2025-03-23 00:30:40.614 +03:00 [INF] HTTP GET / responded 404 in 0.4729 ms
+2025-03-23 00:30:40.624 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/ - 404 0 null 63.2489ms
+2025-03-23 00:30:40.629 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5082/, Response status code: 404
+2025-03-23 00:30:48.445 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.html - null null
+2025-03-23 00:30:48.490 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.html - 200 null text/html;charset=utf-8 45.873ms
+2025-03-23 00:30:48.506 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.js - null null
+2025-03-23 00:30:48.511 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.js - 200 null application/javascript;charset=utf-8 5.0741ms
+2025-03-23 00:30:48.696 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - null null
+2025-03-23 00:30:48.784 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 88.117ms
+2025-03-23 00:31:07.889 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth - application/json 49
+2025-03-23 00:31:07.890 +03:00 [INF] HTTP POST /api/Auth responded 404 in 0.0155 ms
+2025-03-23 00:31:07.891 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth - 404 0 null 2.6648ms
+2025-03-23 00:31:07.893 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth, Response status code: 404
+2025-03-23 00:31:09.725 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth - application/json 49
+2025-03-23 00:31:09.727 +03:00 [INF] HTTP POST /api/Auth responded 404 in 0.0091 ms
+2025-03-23 00:31:09.728 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth - 404 0 null 2.6229ms
+2025-03-23 00:31:09.730 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth, Response status code: 404
+2025-03-23 00:31:10.099 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth - application/json 49
+2025-03-23 00:31:10.100 +03:00 [INF] HTTP POST /api/Auth responded 404 in 0.0096 ms
+2025-03-23 00:31:10.101 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth - 404 0 null 2.5812ms
+2025-03-23 00:31:10.103 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth, Response status code: 404
+2025-03-23 00:31:10.277 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth - application/json 49
+2025-03-23 00:31:10.278 +03:00 [INF] HTTP POST /api/Auth responded 404 in 0.0118 ms
+2025-03-23 00:31:10.279 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth - 404 0 null 2.6616ms
+2025-03-23 00:31:10.281 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth, Response status code: 404
+2025-03-23 00:31:10.432 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth - application/json 49
+2025-03-23 00:31:10.433 +03:00 [INF] HTTP POST /api/Auth responded 404 in 0.0101 ms
+2025-03-23 00:31:10.434 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth - 404 0 null 2.7413ms
+2025-03-23 00:31:10.436 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth, Response status code: 404
+2025-03-23 00:31:10.577 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth - application/json 49
+2025-03-23 00:31:10.579 +03:00 [INF] HTTP POST /api/Auth responded 404 in 0.0075 ms
+2025-03-23 00:31:10.580 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth - 404 0 null 2.6281ms
+2025-03-23 00:31:10.582 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth, Response status code: 404
+2025-03-23 00:31:10.713 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth - application/json 49
+2025-03-23 00:31:10.715 +03:00 [INF] HTTP POST /api/Auth responded 404 in 0.0085 ms
+2025-03-23 00:31:10.716 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth - 404 0 null 2.4744ms
+2025-03-23 00:31:10.718 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth, Response status code: 404
+2025-03-23 00:31:10.835 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth - application/json 49
+2025-03-23 00:31:10.836 +03:00 [INF] HTTP POST /api/Auth responded 404 in 0.0106 ms
+2025-03-23 00:31:10.837 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth - 404 0 null 2.6839ms
+2025-03-23 00:31:10.839 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth, Response status code: 404
+2025-03-23 00:31:10.955 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth - application/json 49
+2025-03-23 00:31:10.957 +03:00 [INF] HTTP POST /api/Auth responded 404 in 0.0162 ms
+2025-03-23 00:31:10.958 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth - 404 0 null 2.4875ms
+2025-03-23 00:31:10.959 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth, Response status code: 404
+2025-03-23 00:31:11.077 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth - application/json 49
+2025-03-23 00:31:11.078 +03:00 [INF] HTTP POST /api/Auth responded 404 in 0.0076 ms
+2025-03-23 00:31:11.079 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth - 404 0 null 2.4949ms
+2025-03-23 00:31:11.081 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth, Response status code: 404
+2025-03-23 00:31:11.190 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth - application/json 49
+2025-03-23 00:31:11.192 +03:00 [INF] HTTP POST /api/Auth responded 404 in 0.0103 ms
+2025-03-23 00:31:11.193 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth - 404 0 null 2.5035ms
+2025-03-23 00:31:11.195 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth, Response status code: 404
+2025-03-23 00:31:11.526 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth - application/json 49
+2025-03-23 00:31:11.528 +03:00 [INF] HTTP POST /api/Auth responded 404 in 0.0100 ms
+2025-03-23 00:31:11.529 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth - 404 0 null 2.4108ms
+2025-03-23 00:31:11.531 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth, Response status code: 404
+2025-03-23 00:32:47.846 +03:00 [INF] Application is shutting down...
+2025-03-23 00:32:52.708 +03:00 [INF] User profile is available. Using 'C:\Users\trokh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-23 00:32:52.777 +03:00 [WRN] Overriding address(es) 'http://localhost:5256'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-03-23 00:32:52.781 +03:00 [INF] Now listening on: http://localhost:5082
+2025-03-23 00:32:52.782 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-23 00:32:52.782 +03:00 [INF] Hosting environment: Development
+2025-03-23 00:32:52.783 +03:00 [INF] Content root path: C:\Users\trokh\RiderProjects\AuthService\AuthWeb
+2025-03-23 00:32:56.377 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth - application/json 49
+2025-03-23 00:32:56.423 +03:00 [INF] HTTP POST /api/Auth responded 404 in 0.4420 ms
+2025-03-23 00:32:56.431 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth - 404 0 null 55.2106ms
+2025-03-23 00:32:56.437 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth, Response status code: 404
+2025-03-23 00:32:57.808 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.html - null null
+2025-03-23 00:32:57.851 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.html - 200 null text/html;charset=utf-8 43.0731ms
+2025-03-23 00:32:57.864 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.js - null null
+2025-03-23 00:32:57.869 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.js - 200 null application/javascript;charset=utf-8 5.4694ms
+2025-03-23 00:32:58.050 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - null null
+2025-03-23 00:32:58.141 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 91.2484ms
+2025-03-23 00:33:06.073 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth - application/json 49
+2025-03-23 00:33:06.075 +03:00 [INF] HTTP POST /api/Auth responded 404 in 0.0204 ms
+2025-03-23 00:33:06.076 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth - 404 0 null 2.6827ms
+2025-03-23 00:33:06.078 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5082/api/Auth, Response status code: 404
+2025-03-23 00:33:14.836 +03:00 [INF] Application is shutting down...

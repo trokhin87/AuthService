@@ -15,15 +15,19 @@ public class AuthController : ControllerBase
         _authService = authService;
     }
 
-    [HttpPost("login")]
+    [HttpPost("")]
     public async Task<IActionResult> CheckUserExists([FromBody] LoginDto loginDto)
     {
-        Log.Information("Запрос проверки пользователя: {@LoginDto}", loginDto);
+        Log.Information("Запрос на авторизацию пользователя: {@LoginDto}", loginDto);
 
-        string exists = await _authService.AuthAsync(loginDto);
+        var authResult = await _authService.AuthAsync(loginDto);
 
-        Log.Information("Результат проверки пользователя: {Exists}", exists);
+        if (!authResult.IsAuthenticated)
+        {
+            return Unauthorized(new { message = authResult.Message });
+        }
 
-        return Ok(new { exists });
+        return Ok(new { token = authResult.Token });
     }
+
 }
