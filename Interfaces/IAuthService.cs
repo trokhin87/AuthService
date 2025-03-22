@@ -1,6 +1,8 @@
-﻿namespace Interfaces;
+﻿using DTO;
 
-public class IAuthService
+namespace Interfaces;
+
+public interface IAuthService
 {
-    
+    Task<string> AuthAsync(LoginDto loginDto);
 }

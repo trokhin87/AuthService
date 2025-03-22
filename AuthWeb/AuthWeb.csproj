@@ -7,7 +7,15 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2"/>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.3" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2" />
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.0-preview.2.25163.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DTO\DTO.csproj" />
+      <ProjectReference Include="..\Infrastructure.Bussines\Infrastructure.Bussines.csproj" />
+      <ProjectReference Include="..\Interfaces\Interfaces.csproj" />
     </ItemGroup>
 
 </Project>
