@@ -1,19 +1,15 @@
-using Infrastructure.Bussines;
-using Interfaces;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddHttpClient<IAuthService, AuthService>();
-builder.Services.AddScoped<IAuthService, AuthService>();
-builder.Services.AddScoped<IJwtService, JwtService>();
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-builder.Services.AddAuthentication().AddJwtBearer();
+// Добавляем Serilog
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
 
 var app = builder.Build();
-
-app.UseAuthentication();
-app.UseAuthorization();
-app.MapControllers();
+app.UseSerilogRequestLogging();
 app.Run();

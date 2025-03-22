@@ -2,9 +2,10 @@
 using System.Threading.Tasks;
 using DTO;
 using Interfaces;
+using Serilog;
 
 [ApiController]
-[Route("api/auth")]
+[Route("api/Auth")]
 public class AuthController : ControllerBase
 {
     private readonly IAuthService _authService;
@@ -15,12 +16,14 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("login")]
-    public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
+    public async Task<IActionResult> CheckUserExists([FromBody] LoginDto loginDto)
     {
-        var token = await _authService.AuthAsync(loginDto);
-        if (token == null)
-            return Unauthorized(new { message = "Неверный логин или пароль" });
+        Log.Information("Запрос проверки пользователя: {@LoginDto}", loginDto);
 
-        return Ok(new { token });
+        string exists = await _authService.AuthAsync(loginDto);
+
+        Log.Information("Результат проверки пользователя: {Exists}", exists);
+
+        return Ok(new { exists });
     }
 }

@@ -4,10 +4,9 @@ using System.Text;
 using Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using Serilog;
 
-namespace Infrastructure.Bussines;
-
-public class JwtService: IJwtService
+public class JwtService : IJwtService
 {
     private readonly IConfiguration _config;
 
@@ -15,9 +14,11 @@ public class JwtService: IJwtService
     {
         _config = configuration;
     }
-    
+
     public string GenerateToken(string username)
     {
+        Log.Information("Генерация JWT токена для {Username}", username);
+
         var claims = new[]
         {
             new Claim(ClaimTypes.Name, username)
@@ -34,6 +35,9 @@ public class JwtService: IJwtService
             signingCredentials: creds
         );
 
-        return new JwtSecurityTokenHandler().WriteToken(token);
-    } 
+        var jwt = new JwtSecurityTokenHandler().WriteToken(token);
+        Log.Information("JWT токен сгенерирован успешно");
+
+        return jwt;
+    }
 }
