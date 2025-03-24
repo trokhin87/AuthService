@@ -24,7 +24,13 @@ public class JwtService : IJwtService
             new Claim(ClaimTypes.Name, username)
         };
 
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
+        var keyString = _config["Jwt:Key"];
+        if (string.IsNullOrEmpty(keyString))
+        {
+            Log.Fatal("Ключ JWT не задан в конфигурации!");
+            throw new InvalidOperationException("Jwt:Key не может быть пустым.");
+        }
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(keyString));
         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
         var token = new JwtSecurityToken(

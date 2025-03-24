@@ -15,7 +15,7 @@ public class AuthController : ControllerBase
         _authService = authService;
     }
 
-    [HttpPost("")]
+    [HttpPost("login")]
     public async Task<IActionResult> CheckUserExists([FromBody] LoginDto loginDto)
     {
         Log.Information("Запрос на авторизацию пользователя: {@LoginDto}", loginDto);

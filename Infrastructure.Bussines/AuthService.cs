@@ -33,7 +33,11 @@ public class AuthService : IAuthService
         }
 
         var responseData = await response.Content.ReadFromJsonAsync<AuthResponseDto>();
-
+        if (responseData == null)
+        {
+            Log.Error("Ответ от Proxy API пришёл пустым или невалидным.");
+            return new AuthResultDto { IsAuthenticated = false, Message = "Ошибка авторизации" };
+        }
         if (responseData?.Exists == true)
         {
             var token = _jwtService.GenerateToken(loginDto.Login);
