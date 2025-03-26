@@ -1,10 +1,14 @@
+using AuthWeb.Examples;
 using Interfaces;
 using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+
+// Добавляем поддержку Swagger с JWT и примерами
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo
@@ -35,7 +39,15 @@ builder.Services.AddSwaggerGen(options =>
             new string[] {}
         }
     });
+
+    options.EnableAnnotations(); // Включаем аннотации Swagger
+    options.ExampleFilters(); // Добавляем примеры запросов
 });
+
+// Добавляем примеры запросов в Swagger
+builder.Services.AddSwaggerExamplesFromAssemblyOf<LoginExample>();
+
+// Регистрация сервисов
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddHttpClient();
