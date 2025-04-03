@@ -32,7 +32,7 @@ else
 {
     builder.WebHost.ConfigureKestrel(options =>
     {
-        options.ListenAnyIP(8087);  
+        options.ListenAnyIP(8080);  
     });
     dbProxy = Environment.GetEnvironmentVariable("dbProxy") ?? throw new Exception("");
     config.Item1 = Environment.GetEnvironmentVariable("JwtKey") ?? throw new Exception("");
