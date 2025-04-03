@@ -9,7 +9,7 @@ public class LoginExample : IExamplesProvider<LoginDto>
     {
         return new LoginDto
         {
-            Login = "usesr1",
+            Login = "user1",
             Password = "password1"
         };
     }
