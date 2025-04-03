@@ -8,16 +8,11 @@ using Serilog;
 public class AuthService : IAuthService
 {
     private readonly IJwtService _jwtService;
-    private readonly IConfiguration _config;
     private readonly HttpClient _httpClient;
-    private readonly string _baseUrl;
-
-    public AuthService(IJwtService jwtService, IConfiguration config, IHttpClientFactory httpClientFactory)
+    public AuthService(IJwtService jwtService, HttpClient httpClient)
     {
         _jwtService = jwtService;
-        _config = config;
-        _httpClient = httpClientFactory.CreateClient("ProxyClient");
-        _baseUrl = _config["ProxyMicroservice:BaseUrl"];
+        _httpClient = httpClient;
     }
 
 
@@ -25,7 +20,7 @@ public class AuthService : IAuthService
     {
         Log.Information("Попытка авторизации пользователя: {@LoginDto}", loginDto);
 
-        var response = await _httpClient.PostAsJsonAsync($"{_baseUrl}/api/Auth/login", loginDto);
+        var response = await _httpClient.PostAsJsonAsync($"/api/Auth/login", loginDto);
         if (!response.IsSuccessStatusCode)
         {
             Log.Warning("Ошибка при запросе к Proxy API: {StatusCode}", response.StatusCode);

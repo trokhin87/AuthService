@@ -8,9 +8,9 @@ using Serilog;
 
 public class JwtService : IJwtService
 {
-    private readonly IConfiguration _config;
+    private readonly (string, string, string) _config;
 
-    public JwtService(IConfiguration configuration)
+    public JwtService((string, string, string) configuration)
     {
         _config = configuration;
     }
@@ -24,7 +24,7 @@ public class JwtService : IJwtService
             new Claim(ClaimTypes.Name, username)
         };
 
-        var keyString = _config["Jwt:Key"];
+        var keyString = _config.Item1?? throw new Exception("");
         if (string.IsNullOrEmpty(keyString))
         {
             Log.Fatal("Ключ JWT не задан в конфигурации!");
@@ -34,8 +34,8 @@ public class JwtService : IJwtService
         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
         var token = new JwtSecurityToken(
-            issuer: _config["Jwt:Issuer"],
-            audience: _config["Jwt:Audience"],
+            issuer: _config.Item2?? throw new Exception(""),
+            audience: _config.Item3?? throw new Exception(""),
             claims: claims,
             expires: DateTime.UtcNow.AddHours(1),
             signingCredentials: creds
