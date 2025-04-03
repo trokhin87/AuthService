@@ -23,10 +23,10 @@ if (builder.Environment.IsDevelopment())
         options.ListenAnyIP(5082);  
     });
     var configuration = builder.Configuration;
-    dbProxy = configuration["ProxyMicroservice:BaseUrl"]?? throw new Exception("");
-    config.Item1 = configuration["Jwt:Key"]?? throw new Exception("");
-    config.Item2 =configuration["Jwt:Issuer"]?? throw new Exception("");
-    config.Item3 = configuration["Jwt:Audience"]?? throw new Exception("");
+    dbProxy = configuration["ProxyMicroservice:BaseUrl"]?? throw new Exception("Не удалось получить ProxyMicroservice:BaseUrl из конфигурации");
+    config.Item1 = configuration["Jwt:Key"]?? throw new Exception("Не удалось получить Jwt:Key из конфигурации");
+    config.Item2 =configuration["Jwt:Issuer"]?? throw new Exception("Не удалось получить Jwt:Issuer из конфигурации");
+    config.Item3 = configuration["Jwt:Audience"]?? throw new Exception("Не удалось получить Jwt:Audience из конфигурации");
 }
 else
 {
@@ -34,17 +34,17 @@ else
     {
         options.ListenAnyIP(8080);  
     });
-    dbProxy = Environment.GetEnvironmentVariable("dbProxy") ?? throw new Exception("");
-    config.Item1 = Environment.GetEnvironmentVariable("JwtKey") ?? throw new Exception("");
-    config.Item2 = Environment.GetEnvironmentVariable("JwtIssuer") ?? throw new Exception("");
-    config.Item3 = Environment.GetEnvironmentVariable("JwtAudience") ?? throw new Exception("");
+    dbProxy = Environment.GetEnvironmentVariable("dbProxy") ?? throw new Exception("Не удалось получить переменную окружения dbProxy");
+    config.Item1 = Environment.GetEnvironmentVariable("JwtKey") ?? throw new Exception("Не удалось получить переменную окружения JwtKey");
+    config.Item2 = Environment.GetEnvironmentVariable("JwtIssuer") ?? throw new Exception("Не удалось получить переменную окружения JwtIssuer");
+    config.Item3 = Environment.GetEnvironmentVariable("JwtAudience") ?? throw new Exception("Не удалось получить переменную окружения JwtAudience");
 }
 
 builder.Services.AddHttpClient("ProxyApiClient", client =>
 {
+    if (string.IsNullOrEmpty(dbProxy)) throw new Exception("dbProxy не инициализирован");
     client.BaseAddress = new Uri(dbProxy); 
 });
-
 
 // Добавляем поддержку Swagger с JWT и примерами
 builder.Services.AddSwaggerGen(options =>
@@ -94,12 +94,9 @@ builder.Services.AddScoped<IAuthService>(provider =>
     return new AuthService(new JwtService(config),httpClient);
 });
 
-
 builder.Services.AddHttpClient();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-
-
 
 var app = builder.Build();
 app.UseSwagger();
@@ -112,6 +109,6 @@ app.MapControllers();
 Log.Information("Application starting...");
 Log.Information($"dbproxy: {dbProxy}");
 Log.Information($"key: {config.Item1}");
-Log.Information($"issur: {config.Item2}");
+Log.Information($"issuer: {config.Item2}");
 Log.Information($"audience: {config.Item3}");
 app.Run();
