@@ -1,20 +1,19 @@
 using AuthWeb.Examples;
 using Interfaces;
 using Microsoft.OpenApi.Models;
+using Serilog;
 using Swashbuckle.AspNetCore.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-
-
-
+// Настройка логирования
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+builder.Host.UseSerilog();
 
 string dbProxy = String.Empty;
 (string, string, string) config=(String.Empty, String.Empty, String.Empty);
-
-
 
 if (builder.Environment.IsDevelopment())
 {
@@ -31,6 +30,10 @@ if (builder.Environment.IsDevelopment())
 }
 else
 {
+    builder.WebHost.ConfigureKestrel(options =>
+    {
+        options.ListenAnyIP(8087);  
+    });
     dbProxy = Environment.GetEnvironmentVariable("dbProxy") ?? throw new Exception("");
     config.Item1 = Environment.GetEnvironmentVariable("JwtKey") ?? throw new Exception("");
     config.Item2 = Environment.GetEnvironmentVariable("JwtIssuer") ?? throw new Exception("");
@@ -90,19 +93,25 @@ builder.Services.AddScoped<IAuthService>(provider =>
 
     return new AuthService(new JwtService(config),httpClient);
 });
+
+
 builder.Services.AddHttpClient();
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+
+
 
 var app = builder.Build();
-
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Auth Microservice API v1");
-    });
-}
-
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Auth Microservice API v1");
+});
 app.UseAuthorization();
 app.MapControllers();
+Log.Information("Application starting...");
+Log.Information($"dbproxy: {dbProxy}");
+Log.Information($"key: {config.Item1}");
+Log.Information($"issur: {config.Item2}");
+Log.Information($"audience: {config.Item3}");
 app.Run();
