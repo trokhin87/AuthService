@@ -101,7 +101,6 @@ builder.Services.AddEndpointsApiExplorer();
 var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
-app.UseAuthorization();
 app.MapControllers();
 Log.Information("Application starting...");
 Log.Information($"dbproxy: {dbProxy}");
