@@ -1,0 +1,279 @@
+2025-04-05 00:01:30.067 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.html - null null
+2025-04-05 00:01:30.098 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.html - 404 0 null 31.4545ms
+2025-04-05 00:01:30.109 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5082/swagger/index.html, Response status code: 404
+2025-04-05 00:01:31.470 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.html - null null
+2025-04-05 00:01:31.474 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.html - 404 0 null 3.9325ms
+2025-04-05 00:01:31.476 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5082/swagger/index.html, Response status code: 404
+2025-04-05 00:02:16.197 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/auth-swagger - null null
+2025-04-05 00:02:16.202 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/auth-swagger - 301 0 null 5.0875ms
+2025-04-05 00:02:16.221 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/auth-swagger/index.html - null null
+2025-04-05 00:02:16.266 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/auth-swagger/index.html - 200 null text/html;charset=utf-8 45.0958ms
+2025-04-05 00:02:16.373 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/auth-swagger/swagger-ui.css - null null
+2025-04-05 00:02:16.391 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-05 00:02:16.393 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/auth-swagger/swagger-ui.css - 200 154948 text/css 20.1334ms
+2025-04-05 00:02:16.444 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/auth-swagger/index.css - null null
+2025-04-05 00:02:16.446 +03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-05 00:02:16.447 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/auth-swagger/index.css - 200 202 text/css 3.325ms
+2025-04-05 00:02:16.568 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/auth-swagger/swagger-ui-bundle.js - null null
+2025-04-05 00:02:16.569 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/auth-swagger/swagger-ui-standalone-preset.js - null null
+2025-04-05 00:02:16.569 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/auth-swagger/index.js - null null
+2025-04-05 00:02:16.575 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/auth-swagger/index.js - 200 null application/javascript;charset=utf-8 5.5227ms
+2025-04-05 00:02:16.575 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-05 00:02:16.579 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/auth-swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 9.4815ms
+2025-04-05 00:02:16.583 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-05 00:02:16.584 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/auth-swagger/swagger-ui-bundle.js - 200 1466324 text/javascript 15.5765ms
+2025-04-05 00:02:16.688 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/auth-swagger/v1/swagger.json - null null
+2025-04-05 00:02:16.691 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/auth-swagger/v1/swagger.json - 404 0 null 2.2852ms
+2025-04-05 00:02:16.693 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5082/auth-swagger/v1/swagger.json, Response status code: 404
+2025-04-05 00:02:16.719 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/auth-swagger/favicon-32x32.png - null null
+2025-04-05 00:02:16.721 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-05 00:02:16.723 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/auth-swagger/favicon-32x32.png - 200 628 image/png 3.8311ms
+2025-04-05 00:04:21.914 +03:00 [INF] Application is shutting down...
+2025-04-05 00:04:25.005 +03:00 [INF] Application starting...
+2025-04-05 00:04:25.030 +03:00 [INF] dbproxy: http://localhost:5010
+2025-04-05 00:04:25.031 +03:00 [INF] key: YourSuperLongSecretKeyWithAtLeast32Characters
+2025-04-05 00:04:25.032 +03:00 [INF] issuer: your-issuer
+2025-04-05 00:04:25.032 +03:00 [INF] audience: your-audience
+2025-04-05 00:04:25.057 +03:00 [WRN] Overriding address(es) 'http://localhost:8087'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-05 00:04:25.070 +03:00 [INF] Now listening on: http://[::]:5082
+2025-04-05 00:04:25.070 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-05 00:04:25.071 +03:00 [INF] Hosting environment: Development
+2025-04-05 00:04:25.072 +03:00 [INF] Content root path: C:\Users\trokh\RiderProjects\AuthService\AuthWeb
+2025-04-05 00:04:59.718 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/{**catch-all} - null null
+2025-04-05 00:04:59.750 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/{**catch-all} - 404 0 null 32.7658ms
+2025-04-05 00:04:59.760 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5082/swagger/%7B**catch-all%7D, Response status code: 404
+2025-04-05 00:07:02.333 +03:00 [INF] Application is shutting down...
+2025-04-05 00:08:25.474 +03:00 [INF] Application starting...
+2025-04-05 00:08:25.499 +03:00 [INF] dbproxy: http://localhost:5010
+2025-04-05 00:08:25.500 +03:00 [INF] key: YourSuperLongSecretKeyWithAtLeast32Characters
+2025-04-05 00:08:25.500 +03:00 [INF] issuer: your-issuer
+2025-04-05 00:08:25.501 +03:00 [INF] audience: your-audience
+2025-04-05 00:08:25.526 +03:00 [WRN] Overriding address(es) 'http://localhost:8087'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-05 00:08:25.541 +03:00 [INF] Now listening on: http://[::]:5082
+2025-04-05 00:08:25.542 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-05 00:08:25.543 +03:00 [INF] Hosting environment: Development
+2025-04-05 00:08:25.543 +03:00 [INF] Content root path: C:\Users\trokh\RiderProjects\AuthService\AuthWeb
+2025-04-05 00:12:05.119 +03:00 [INF] Application is shutting down...
+2025-04-05 00:12:07.863 +03:00 [INF] Application starting...
+2025-04-05 00:12:07.887 +03:00 [INF] dbproxy: http://localhost:5010
+2025-04-05 00:12:07.887 +03:00 [INF] key: YourSuperLongSecretKeyWithAtLeast32Characters
+2025-04-05 00:12:07.888 +03:00 [INF] issuer: your-issuer
+2025-04-05 00:12:07.888 +03:00 [INF] audience: your-audience
+2025-04-05 00:12:07.913 +03:00 [WRN] Overriding address(es) 'http://localhost:8087'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-05 00:12:07.926 +03:00 [INF] Now listening on: http://[::]:5082
+2025-04-05 00:12:07.927 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-05 00:12:07.928 +03:00 [INF] Hosting environment: Development
+2025-04-05 00:12:07.929 +03:00 [INF] Content root path: C:\Users\trokh\RiderProjects\AuthService\AuthWeb
+2025-04-05 00:12:49.866 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.html - null null
+2025-04-05 00:12:49.940 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.html - 200 null text/html;charset=utf-8 74.0558ms
+2025-04-05 00:12:49.955 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.css - null null
+2025-04-05 00:12:49.955 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.js - null null
+2025-04-05 00:12:49.955 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/swagger-ui-bundle.js - null null
+2025-04-05 00:12:49.955 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/swagger-ui.css - null null
+2025-04-05 00:12:49.955 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-05 00:12:49.960 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.js - 200 null application/javascript;charset=utf-8 4.9288ms
+2025-04-05 00:12:49.967 +03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-05 00:12:49.969 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.css - 200 202 text/css 13.5903ms
+2025-04-05 00:12:49.972 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-05 00:12:49.972 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-05 00:12:49.973 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-05 00:12:49.976 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 21.0299ms
+2025-04-05 00:12:49.976 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/swagger-ui.css - 200 154948 text/css 20.8519ms
+2025-04-05 00:12:49.976 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/swagger-ui-bundle.js - 200 1466324 text/javascript 20.9489ms
+2025-04-05 00:12:50.093 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/favicon-32x32.png - null null
+2025-04-05 00:12:50.095 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-05 00:12:50.096 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/favicon-32x32.png - 200 628 image/png 3.2157ms
+2025-04-05 00:30:13.281 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/favicon-32x32.png - null null
+2025-04-05 00:30:13.284 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-05 00:30:13.285 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/favicon-32x32.png - 200 628 image/png 3.7636ms
+2025-04-05 00:30:13.359 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/favicon.ico - null null
+2025-04-05 00:30:13.363 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/favicon.ico - 404 0 null 4.39ms
+2025-04-05 00:30:13.367 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5082/favicon.ico, Response status code: 404
+2025-04-05 00:30:17.283 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger - null null
+2025-04-05 00:30:17.288 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger - 301 0 null 4.6359ms
+2025-04-05 00:30:17.290 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.html - null null
+2025-04-05 00:30:17.292 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.html - 200 null text/html;charset=utf-8 2.0592ms
+2025-04-05 00:30:17.305 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/swagger-ui.css - null null
+2025-04-05 00:30:17.306 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.css - null null
+2025-04-05 00:30:17.306 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/swagger-ui-bundle.js - null null
+2025-04-05 00:30:17.306 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.js - null null
+2025-04-05 00:30:17.306 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-05 00:30:17.308 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-05 00:30:17.309 +03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-05 00:30:17.313 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-05 00:30:17.313 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.js - 200 null application/javascript;charset=utf-8 7.0608ms
+2025-04-05 00:30:17.315 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-05 00:30:17.316 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/swagger-ui.css - 200 154948 text/css 10.3801ms
+2025-04-05 00:30:17.317 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.css - 200 202 text/css 11.0501ms
+2025-04-05 00:30:17.318 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/swagger-ui-bundle.js - 200 1466324 text/javascript 11.9912ms
+2025-04-05 00:30:17.321 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 15.1414ms
+2025-04-05 00:30:17.622 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - null null
+2025-04-05 00:30:17.728 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 105.9521ms
+2025-04-05 00:30:20.401 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth/login - application/json 49
+2025-04-05 00:30:20.405 +03:00 [INF] Executing endpoint 'AuthController.CheckUserExists (AuthWeb)'
+2025-04-05 00:30:20.420 +03:00 [INF] Route matched with {action = "CheckUserExists", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CheckUserExists(DTO.LoginDto) on controller AuthController (AuthWeb).
+2025-04-05 00:30:20.482 +03:00 [INF] Executing action method AuthController.CheckUserExists (AuthWeb) - Validation state: "Valid"
+2025-04-05 00:30:20.485 +03:00 [INF] Запрос на авторизацию пользователя: {"Login":"user1","Password":"password1","$type":"LoginDto"}
+2025-04-05 00:30:20.493 +03:00 [INF] Попытка авторизации пользователя: {"Login":"user1","Password":"password1","$type":"LoginDto"}
+2025-04-05 00:30:20.499 +03:00 [INF] Start processing HTTP request POST http://localhost:5010/api/Auth/login
+2025-04-05 00:30:20.500 +03:00 [INF] Sending HTTP request POST http://localhost:5010/api/Auth/login
+2025-04-05 00:30:22.274 +03:00 [INF] Received HTTP response headers after 1770.62ms - 200
+2025-04-05 00:30:22.276 +03:00 [INF] End processing HTTP request after 1777.1568ms - 200
+2025-04-05 00:30:22.299 +03:00 [INF] Генерация JWT токена для user1
+2025-04-05 00:30:22.330 +03:00 [INF] JWT токен сгенерирован успешно
+2025-04-05 00:30:22.331 +03:00 [INF] Успешная аутентификация: user1
+2025-04-05 00:30:22.335 +03:00 [INF] Executed action method AuthController.CheckUserExists (AuthWeb), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1849.3856ms.
+2025-04-05 00:30:22.340 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-05 00:30:22.347 +03:00 [INF] Executed action AuthController.CheckUserExists (AuthWeb) in 1923.2825ms
+2025-04-05 00:30:22.348 +03:00 [INF] Executed endpoint 'AuthController.CheckUserExists (AuthWeb)'
+2025-04-05 00:30:22.350 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth/login - 200 null application/json; charset=utf-8 1948.2265ms
+2025-04-05 00:31:27.434 +03:00 [INF] Application is shutting down...
+2025-04-05 00:34:07.856 +03:00 [INF] Application starting...
+2025-04-05 00:34:07.882 +03:00 [INF] dbproxy: http://localhost:5010
+2025-04-05 00:34:07.883 +03:00 [INF] key: YourSuperLongSecretKeyWithAtLeast32Characters
+2025-04-05 00:34:07.883 +03:00 [INF] issuer: your-issuer
+2025-04-05 00:34:07.884 +03:00 [INF] audience: your-audience
+2025-04-05 00:34:07.909 +03:00 [WRN] Overriding address(es) 'http://localhost:8087'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-05 00:34:07.922 +03:00 [INF] Now listening on: http://[::]:5082
+2025-04-05 00:34:07.923 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-05 00:34:07.923 +03:00 [INF] Hosting environment: Development
+2025-04-05 00:34:07.924 +03:00 [INF] Content root path: C:\Users\trokh\RiderProjects\AuthService\AuthWeb
+2025-04-05 00:35:15.597 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.html - null null
+2025-04-05 00:35:15.666 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.html - 200 null text/html;charset=utf-8 69.7513ms
+2025-04-05 00:35:15.738 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.js - null null
+2025-04-05 00:35:15.742 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.js - 200 null application/javascript;charset=utf-8 4.1174ms
+2025-04-05 00:35:15.993 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - null null
+2025-04-05 00:35:16.091 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 98.4626ms
+2025-04-05 00:36:56.991 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/auth/swagger/v1/swagger.json - null null
+2025-04-05 00:36:56.994 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/auth/swagger/v1/swagger.json - 404 0 null 3.0225ms
+2025-04-05 00:36:56.998 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5082/auth/swagger/v1/swagger.json, Response status code: 404
+2025-04-05 00:41:16.384 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/auth/swagger/v1/swagger.json - null null
+2025-04-05 00:41:16.386 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/auth/swagger/v1/swagger.json - 404 0 null 2.0869ms
+2025-04-05 00:41:16.388 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5082/auth/swagger/v1/swagger.json, Response status code: 404
+2025-04-05 00:42:49.299 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - null null
+2025-04-05 00:42:49.303 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.6187ms
+2025-04-05 00:45:38.688 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.html - null null
+2025-04-05 00:45:38.691 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.html - 200 null text/html;charset=utf-8 2.3535ms
+2025-04-05 00:45:38.705 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.js - null null
+2025-04-05 00:45:38.707 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.js - 200 null application/javascript;charset=utf-8 2.3382ms
+2025-04-05 00:47:32.401 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/auth/swagger/index.html - null null
+2025-04-05 00:47:32.403 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/auth/swagger/index.html - 404 0 null 2.1059ms
+2025-04-05 00:47:32.405 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5082/auth/swagger/index.html, Response status code: 404
+2025-04-05 00:48:18.404 +03:00 [INF] Application is shutting down...
+2025-04-05 20:32:23.555 +03:00 [INF] Application starting...
+2025-04-05 20:32:23.592 +03:00 [INF] dbproxy: http://localhost:5010
+2025-04-05 20:32:23.592 +03:00 [INF] key: YourSuperLongSecretKeyWithAtLeast32Characters
+2025-04-05 20:32:23.593 +03:00 [INF] issuer: your-issuer
+2025-04-05 20:32:23.593 +03:00 [INF] audience: your-audience
+2025-04-05 20:32:23.626 +03:00 [WRN] Overriding address(es) 'http://localhost:8087'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-05 20:32:23.644 +03:00 [INF] Now listening on: http://[::]:5082
+2025-04-05 20:32:23.645 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-05 20:32:23.646 +03:00 [INF] Hosting environment: Development
+2025-04-05 20:32:23.647 +03:00 [INF] Content root path: C:\Users\trokh\RiderProjects\AuthService\AuthWeb
+2025-04-05 20:40:11.522 +03:00 [INF] Application is shutting down...
+2025-04-05 20:40:14.504 +03:00 [INF] Application starting...
+2025-04-05 20:40:14.529 +03:00 [INF] dbproxy: http://localhost:5010
+2025-04-05 20:40:14.529 +03:00 [INF] key: YourSuperLongSecretKeyWithAtLeast32Characters
+2025-04-05 20:40:14.530 +03:00 [INF] issuer: your-issuer
+2025-04-05 20:40:14.531 +03:00 [INF] audience: your-audience
+2025-04-05 20:40:14.557 +03:00 [WRN] Overriding address(es) 'http://localhost:8087'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-05 20:40:14.569 +03:00 [INF] Now listening on: http://[::]:5082
+2025-04-05 20:40:14.570 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-05 20:40:14.570 +03:00 [INF] Hosting environment: Development
+2025-04-05 20:40:14.571 +03:00 [INF] Content root path: C:\Users\trokh\RiderProjects\AuthService\AuthWeb
+2025-04-05 20:40:35.190 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.html - null null
+2025-04-05 20:40:35.265 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.html - 200 null text/html;charset=utf-8 75.9121ms
+2025-04-05 20:40:35.270 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/swagger-ui-bundle.js - null null
+2025-04-05 20:40:35.271 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.css - null null
+2025-04-05 20:40:35.276 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/swagger-ui.css - null null
+2025-04-05 20:40:35.284 +03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-05 20:40:35.286 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.css - 200 202 text/css 14.8913ms
+2025-04-05 20:40:35.288 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-05 20:40:35.291 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-05 20:40:35.294 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-05 20:40:35.294 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/swagger-ui.css - 200 154948 text/css 18.2155ms
+2025-04-05 20:40:35.295 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 6.6829ms
+2025-04-05 20:40:35.298 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.js - null null
+2025-04-05 20:40:35.303 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.js - 200 null application/javascript;charset=utf-8 4.8509ms
+2025-04-05 20:40:35.304 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-05 20:40:35.306 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/swagger-ui-bundle.js - 200 1466324 text/javascript 36.4465ms
+2025-04-05 20:40:35.426 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - null null
+2025-04-05 20:40:35.523 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 97.0255ms
+2025-04-05 20:40:37.165 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger - null null
+2025-04-05 20:40:37.170 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger - 301 0 null 4.6238ms
+2025-04-05 20:40:37.173 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.html - null null
+2025-04-05 20:40:37.175 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.html - 200 null text/html;charset=utf-8 2.5111ms
+2025-04-05 20:40:37.200 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.js - null null
+2025-04-05 20:40:37.205 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.js - 200 null application/javascript;charset=utf-8 4.5756ms
+2025-04-05 20:40:37.496 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - null null
+2025-04-05 20:40:37.503 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.2991ms
+2025-04-05 20:42:08.106 +03:00 [INF] Application is shutting down...
+2025-04-05 20:42:10.958 +03:00 [INF] Application starting...
+2025-04-05 20:42:10.984 +03:00 [INF] dbproxy: http://localhost:5010
+2025-04-05 20:42:10.985 +03:00 [INF] key: YourSuperLongSecretKeyWithAtLeast32Characters
+2025-04-05 20:42:10.985 +03:00 [INF] issuer: your-issuer
+2025-04-05 20:42:10.986 +03:00 [INF] audience: your-audience
+2025-04-05 20:42:11.012 +03:00 [WRN] Overriding address(es) 'http://localhost:8087'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-05 20:42:11.024 +03:00 [INF] Now listening on: http://[::]:5082
+2025-04-05 20:42:11.025 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-05 20:42:11.026 +03:00 [INF] Hosting environment: Development
+2025-04-05 20:42:11.026 +03:00 [INF] Content root path: C:\Users\trokh\RiderProjects\AuthService\AuthWeb
+2025-04-05 20:42:13.165 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.html - null null
+2025-04-05 20:42:13.233 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.html - 200 null text/html;charset=utf-8 68.4825ms
+2025-04-05 20:42:13.247 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.js - null null
+2025-04-05 20:42:13.251 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.js - 200 null application/javascript;charset=utf-8 3.8828ms
+2025-04-05 20:42:13.298 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/auth/swagger/v1/swagger.json - null null
+2025-04-05 20:42:13.298 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/favicon-32x32.png - null null
+2025-04-05 20:42:13.304 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/auth/swagger/v1/swagger.json - 404 0 null 6.2577ms
+2025-04-05 20:42:13.308 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5082/swagger/auth/swagger/v1/swagger.json, Response status code: 404
+2025-04-05 20:42:13.309 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-05 20:42:13.311 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/favicon-32x32.png - 200 628 image/png 12.4551ms
+2025-04-05 20:42:20.375 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/ - null null
+2025-04-05 20:42:20.377 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/ - 404 0 null 2.2161ms
+2025-04-05 20:42:20.380 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5082/, Response status code: 404
+2025-04-05 20:42:25.257 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/auth/swagger - null null
+2025-04-05 20:42:25.260 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/auth/swagger - 404 0 null 2.0213ms
+2025-04-05 20:42:25.262 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5082/auth/swagger, Response status code: 404
+2025-04-05 20:42:33.148 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.html - null null
+2025-04-05 20:42:33.150 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.html - 200 null text/html;charset=utf-8 2.2385ms
+2025-04-05 20:42:33.167 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.js - null null
+2025-04-05 20:42:33.169 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.js - 200 null application/javascript;charset=utf-8 2.4679ms
+2025-04-05 20:42:33.394 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/auth/swagger/v1/swagger.json - null null
+2025-04-05 20:42:33.397 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/auth/swagger/v1/swagger.json - 404 0 null 2.5071ms
+2025-04-05 20:42:33.399 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5082/swagger/auth/swagger/v1/swagger.json, Response status code: 404
+2025-04-05 20:42:46.343 +03:00 [INF] Application is shutting down...
+2025-04-05 20:42:49.498 +03:00 [INF] Application starting...
+2025-04-05 20:42:49.522 +03:00 [INF] dbproxy: http://localhost:5010
+2025-04-05 20:42:49.522 +03:00 [INF] key: YourSuperLongSecretKeyWithAtLeast32Characters
+2025-04-05 20:42:49.523 +03:00 [INF] issuer: your-issuer
+2025-04-05 20:42:49.523 +03:00 [INF] audience: your-audience
+2025-04-05 20:42:49.549 +03:00 [WRN] Overriding address(es) 'http://localhost:8087'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-05 20:42:49.561 +03:00 [INF] Now listening on: http://[::]:5082
+2025-04-05 20:42:49.562 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-05 20:42:49.562 +03:00 [INF] Hosting environment: Development
+2025-04-05 20:42:49.563 +03:00 [INF] Content root path: C:\Users\trokh\RiderProjects\AuthService\AuthWeb
+2025-04-05 20:42:54.870 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.html - null null
+2025-04-05 20:42:54.938 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.html - 200 null text/html;charset=utf-8 68.4231ms
+2025-04-05 20:42:54.950 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/index.js - null null
+2025-04-05 20:42:54.954 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/index.js - 200 null application/javascript;charset=utf-8 4.0766ms
+2025-04-05 20:42:55.001 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - null null
+2025-04-05 20:42:55.101 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 99.9664ms
+2025-04-05 20:42:58.246 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5082/api/Auth/login - application/json 49
+2025-04-05 20:42:58.251 +03:00 [INF] Executing endpoint 'AuthController.CheckUserExists (AuthWeb)'
+2025-04-05 20:42:58.268 +03:00 [INF] Route matched with {action = "CheckUserExists", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CheckUserExists(DTO.LoginDto) on controller AuthController (AuthWeb).
+2025-04-05 20:42:58.326 +03:00 [INF] Executing action method AuthController.CheckUserExists (AuthWeb) - Validation state: "Valid"
+2025-04-05 20:42:58.329 +03:00 [INF] Запрос на авторизацию пользователя: {"Login":"user1","Password":"password1","$type":"LoginDto"}
+2025-04-05 20:42:58.336 +03:00 [INF] Попытка авторизации пользователя: {"Login":"user1","Password":"password1","$type":"LoginDto"}
+2025-04-05 20:42:58.343 +03:00 [INF] Start processing HTTP request POST http://localhost:5010/api/Auth/login
+2025-04-05 20:42:58.345 +03:00 [INF] Sending HTTP request POST http://localhost:5010/api/Auth/login
+2025-04-05 20:43:00.161 +03:00 [INF] Received HTTP response headers after 1812.6787ms - 200
+2025-04-05 20:43:00.162 +03:00 [INF] End processing HTTP request after 1820.8002ms - 200
+2025-04-05 20:43:00.183 +03:00 [INF] Генерация JWT токена для user1
+2025-04-05 20:43:00.212 +03:00 [INF] JWT токен сгенерирован успешно
+2025-04-05 20:43:00.213 +03:00 [INF] Успешная аутентификация: user1
+2025-04-05 20:43:00.218 +03:00 [INF] Executed action method AuthController.CheckUserExists (AuthWeb), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1888.0547ms.
+2025-04-05 20:43:00.225 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-05 20:43:00.233 +03:00 [INF] Executed action AuthController.CheckUserExists (AuthWeb) in 1960.4087ms
+2025-04-05 20:43:00.234 +03:00 [INF] Executed endpoint 'AuthController.CheckUserExists (AuthWeb)'
+2025-04-05 20:43:00.238 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5082/api/Auth/login - 200 null application/json; charset=utf-8 1991.8678ms
+2025-04-05 20:48:50.878 +03:00 [INF] Application is shutting down...

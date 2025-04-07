@@ -1,0 +1,43 @@
+2025-04-04 23:50:48.163 +03:00 [INF] Application starting...
+2025-04-04 23:50:48.189 +03:00 [INF] dbproxy: http://localhost:5010
+2025-04-04 23:50:48.189 +03:00 [INF] key: YourSuperLongSecretKeyWithAtLeast32Characters
+2025-04-04 23:50:48.190 +03:00 [INF] issuer: your-issuer
+2025-04-04 23:50:48.190 +03:00 [INF] audience: your-audience
+2025-04-04 23:50:48.220 +03:00 [WRN] Overriding address(es) 'http://localhost:8087'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-04 23:50:48.234 +03:00 [INF] Now listening on: http://[::]:5082
+2025-04-04 23:50:48.235 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-04 23:50:48.236 +03:00 [INF] Hosting environment: Development
+2025-04-04 23:50:48.236 +03:00 [INF] Content root path: C:\Users\trokh\RiderProjects\AuthService\AuthWeb
+2025-04-04 23:50:51.753 +03:00 [INF] Application is shutting down...
+2025-04-04 23:51:19.872 +03:00 [INF] Application starting...
+2025-04-04 23:51:19.899 +03:00 [INF] dbproxy: http://localhost:5010
+2025-04-04 23:51:19.900 +03:00 [INF] key: YourSuperLongSecretKeyWithAtLeast32Characters
+2025-04-04 23:51:19.901 +03:00 [INF] issuer: your-issuer
+2025-04-04 23:51:19.901 +03:00 [INF] audience: your-audience
+2025-04-04 23:51:19.930 +03:00 [WRN] Overriding address(es) 'http://localhost:8087'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-04 23:51:19.943 +03:00 [INF] Now listening on: http://[::]:5082
+2025-04-04 23:51:19.944 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-04 23:51:19.944 +03:00 [INF] Hosting environment: Development
+2025-04-04 23:51:19.945 +03:00 [INF] Content root path: C:\Users\trokh\RiderProjects\AuthService\AuthWeb
+2025-04-04 23:56:59.775 +03:00 [INF] Application is shutting down...
+2025-04-04 23:57:03.085 +03:00 [INF] Application starting...
+2025-04-04 23:57:03.113 +03:00 [INF] dbproxy: http://localhost:5010
+2025-04-04 23:57:03.114 +03:00 [INF] key: YourSuperLongSecretKeyWithAtLeast32Characters
+2025-04-04 23:57:03.115 +03:00 [INF] issuer: your-issuer
+2025-04-04 23:57:03.116 +03:00 [INF] audience: your-audience
+2025-04-04 23:57:03.145 +03:00 [WRN] Overriding address(es) 'http://localhost:8087'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-04 23:57:03.157 +03:00 [INF] Now listening on: http://[::]:5082
+2025-04-04 23:57:03.158 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-04 23:57:03.159 +03:00 [INF] Hosting environment: Development
+2025-04-04 23:57:03.160 +03:00 [INF] Content root path: C:\Users\trokh\RiderProjects\AuthService\AuthWeb
+2025-04-04 23:59:55.008 +03:00 [INF] Application is shutting down...
+2025-04-04 23:59:58.009 +03:00 [INF] Application starting...
+2025-04-04 23:59:58.038 +03:00 [INF] dbproxy: http://localhost:5010
+2025-04-04 23:59:58.039 +03:00 [INF] key: YourSuperLongSecretKeyWithAtLeast32Characters
+2025-04-04 23:59:58.039 +03:00 [INF] issuer: your-issuer
+2025-04-04 23:59:58.040 +03:00 [INF] audience: your-audience
+2025-04-04 23:59:58.067 +03:00 [WRN] Overriding address(es) 'http://localhost:8087'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-04 23:59:58.081 +03:00 [INF] Now listening on: http://[::]:5082
+2025-04-04 23:59:58.082 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-04 23:59:58.083 +03:00 [INF] Hosting environment: Development
+2025-04-04 23:59:58.085 +03:00 [INF] Content root path: C:\Users\trokh\RiderProjects\AuthService\AuthWeb

@@ -100,10 +100,7 @@ builder.Services.AddEndpointsApiExplorer();
 
 var app = builder.Build();
 app.UseSwagger();
-app.UseSwaggerUI(c =>
-{
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Auth Microservice API v1");
-});
+app.UseSwaggerUI();
 app.UseAuthorization();
 app.MapControllers();
 Log.Information("Application starting...");
